@@ -1,0 +1,740 @@
+/*<!-- Navbar Css -->*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #1f1f1f;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: #2954b0;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.08em;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-big {
+  padding: 0.7rem 1.3rem;
+  line-height: 1.3rem;
+}
+
+.btn:hover {
+  color: white !important;
+  background: #173983;
+}
+
+.text-input {
+  padding: 0.7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  color: #1f1f1f;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-inputs {
+  margin: 5px;
+  width: 100%;
+  color: #1f1f1f;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-informasi {
+  text-align: center;
+}
+
+.text-inputss {
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  color: #1f1f1f;
+  line-height: 1rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-pembuat {
+  padding: 0.7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  color: #1f1f1f;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.msg {
+  width: 100%;
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.success {
+  color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  background: #64aad2;
+}
+
+.error {
+  color: #7e0d0d;
+  border: 1px solid #7e0d0d;
+  background: #d07977;
+}
+
+/*NAVBAR */
+
+header {
+  background: #2954b0;
+  height: 66px;
+}
+
+header * {
+  color: white;
+}
+
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+header .logo-text {
+  margin: 9px;
+  font-family: "Rubik", sans-serif;
+}
+
+header .logo-text span {
+  color: whitesmoke;
+}
+
+header ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+  position: relative;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 145px;
+  display: none;
+  z-index: 88888;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+}
+
+header ul li ul li a {
+  padding: 10px;
+  background: #f3f3f3;
+  color: #1f1f1f;
+}
+
+header ul li ul li a:hover {
+  background: #c6c6c6;
+}
+
+header ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background: #173983;
+  transition: 0.5s ease-in-out;
+}
+
+header .menu-toggle {
+  display: none;
+}
+
+/*<!-- Navbar Css END-->*/
+.page-wrapper {
+  margin: auto;
+  padding: auto;
+}
+
+.page-wrapper a:hover {
+  color: #173983;
+}
+
+/*<!-- Post slider -->*/
+.post-slider {
+  display: absolute;
+}
+
+.post-slider .slider-title {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.post-slider .next {
+  float: right;
+  margin-top: 120px;
+  margin-right: 10px;
+  font-size: 2em;
+  color: #173983;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  float: left;
+  margin-top: 120px;
+  margin-left: 10px;
+  font-size: 2em;
+  color: #173983;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 85%;
+  height: 350px;
+  margin: 0 auto; /* Mengatur margin menjadi auto untuk pusatkan slider */
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.post-slider .post-wrapper .post {
+  width: 300px;
+  height: 300px;
+  margin: 0 10px;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #c6c6c6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.post-slider .post-wrapper .post .post-info {
+  height: 130px;
+  padding: 0 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.post {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.post-slider .post-wrapper .post h4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post-slider .post-wrapper .post a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/*<!-- content -->*/
+.content {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.content .main-content {
+  width: 70%;
+  float: left;
+}
+
+/*single halaman lain */
+.content .main-content.single {
+  background: white;
+  padding: 20px 50px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.content .main-content.single .recent-post-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content .main-content .post {
+  width: 95%;
+  height: 270px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+}
+
+.content .popular .post {
+  border-top: 1px solid whitesmoke;
+  margin-top: 10px;
+  padding-top: 0px;
+}
+
+.content .popular .post img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 65px;
+  width: 50px;
+  float: left;
+}
+
+.content .popular .post h4 {
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Menyusun teks di tengah secara vertikal */
+  height: 65px; /* Sesuaikan tinggi container dengan tinggi gambar */
+  margin: 0; /* Reset margin untuk memastikan posisi yang benar */
+}
+
+.content .popular .post h4:hover {
+  color: #2954b0;
+  margin-left: 15px;
+  transition: all 0.3s;
+  border: none;
+}
+
+/*single halaman lain end*/
+
+/* novel korea */
+/* Novel Korea End*/
+
+/*main content*/
+.content .main-content .post .read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #173983;
+  background: transparent;
+  border-radius: 0px;
+  color: #173983 !important;
+}
+
+.content .main-content .post .read-more:hover {
+  background: #173983;
+  color: white !important;
+  transition: 0.25s;
+}
+
+.content .main-content .post .post-image {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.content .main-content .post .post-preview {
+  width: 65%;
+  padding: 10px;
+  float: right;
+}
+
+.content .main-content .post .post-preview .previw-text {
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-right: 15px;
+}
+
+.content .main-content .post .post-preview .genres {
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.content .main-content .post .post-preview .genre {
+  background-color: #173983;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.content .main-content .recent-post-title {
+  margin: 20px;
+}
+
+.content .sidebar {
+  width: 30%;
+  float: left;
+}
+
+.content .sidebar.single {
+  padding: 0px 10px;
+}
+
+.content .sidebar .section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.content .sidebar .section .selection-title {
+  margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section-search {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.content .sidebar .section.topics ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.content .sidebar .section.topics ul li a {
+  display: block;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid #c6c6c6;
+  transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+
+/*<!-- login singup -->*/
+.auth-content {
+  width: 30%;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.auth-content .form-title {
+  text-align: center;
+}
+
+.auth-content form div {
+  margin-bottom: 10px;
+}
+
+.auth-content form p {
+  text-align: center;
+}
+
+.auth-content form p a {
+  text-decoration: underline;
+}
+
+/*<!-- footer -->*/
+.footer {
+  background: #1f1f1f;
+  color: #f3f3f3;
+  height: 200px;
+  position: absolute;
+  text-align: center;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+}
+
+.footer .footer-content .about h1 span {
+  color: #2954b0;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.footer .footer-content .about .socials a:hover {
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .link ul a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer .footer-content .link ul a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all 0.3s;
+  border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+  background: #141414;
+}
+
+.footer .footer-content .contact-form .contact-btn {
+  float: right;
+  font-size: 1.1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer .footer-content .contact-form .contact-btn i {
+  margin-right: 5px; /* Menambahkan margin agar ikon dan teks tidak menyatu */
+}
+
+.footer .footer-content .contact-form .contact-btn {
+  float: right;
+}
+
+.footer .footer-content .contact-form .contact-input {
+  background: #343434;
+  color: #f3f3f3;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: 0.9rem 1.4rem;
+  border: none;
+}
+
+.footer .footer-bottom {
+  background: #141414;
+  color: #c6c6c6;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+/*<!-- Resize -->*/
+
+@media only screen and (max-width: 934px) {
+  .contact {
+    width: 100%;
+  }
+
+  .auth-content {
+    width: 50%;
+  }
+
+  .content .main-content .post {
+    width: 100%;
+  }
+
+  .content .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content .sidebar .section-search {
+    margin-top: 30px;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer .footer-content {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer .footer-content .contact-form {
+    padding: 90px;
+  }
+
+  .footer .footer-content .contact-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    position: relative;
+  }
+
+  .auth-content {
+    width: 60%;
+  }
+
+  .main-content-wrapper {
+    padding: 10px;
+  }
+
+  header ul {
+    width: 100%;
+    background: #2954b0;
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  .showing {
+    max-height: 100em;
+    transition: 0.9s;
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+
+  header ul li ul li a {
+    padding: 10px;
+    background: #2954b0;
+    color: #f3f3f3;
+    padding-left: 50px;
+  }
+
+  header ul li ul li a.logout {
+    color: red;
+  }
+
+  header ul li ul li a:hover {
+    background: #173983;
+  }
+
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+  }
+
+  header .logo {
+    margin-left: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content .main-content .post {
+    height: auto;
+  }
+
+  .auth-content {
+    width: 90%;
+  }
+
+  .content .main-content.single {
+    padding: 10px 20px;
+  }
+
+  .content .main-content .post .post-image {
+    width: 100%;
+  }
+
+  .content .main-content .post .post-preview {
+    width: 100%;
+  }
+
+  .content .main-content .post .read-more {
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content .main-content .post .post-preview .genres {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-slider .next {
+    right: 10px;
+  }
+
+  .post-slider .prev {
+    left: 10px;
+  }
+}
